@@ -12,7 +12,7 @@ const GDPR = () => {
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
-                <Cherry className="w-5 h-5 text-white" />
+                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-5 h-5" />
               </div>
               <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
             </Link>
@@ -98,7 +98,7 @@ const GDPR = () => {
               <p className="text-gray-600 mb-4">To exercise any of your GDPR rights:</p>
               <ul className="list-disc pl-6 text-gray-600 space-y-2">
                 <li>Use the in-app settings for account management</li>
-                <li>Email us at gdpr@scanberry.app</li>
+                <li>Email us at app.scanberry@gmail.com</li>
                 <li>We will respond within 30 days</li>
                 <li>Identity verification may be required</li>
               </ul>
@@ -109,7 +109,7 @@ const GDPR = () => {
               <p className="text-gray-600 mb-4">
                 For data protection matters, you can contact our Data Protection Officer at:
                 <br />
-                <strong>Email:</strong> dpo@scanberry.app
+                <strong>Email:</strong> app.scanberry@gmail.com
               </p>
             </section>
 

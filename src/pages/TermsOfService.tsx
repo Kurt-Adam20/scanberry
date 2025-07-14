@@ -12,7 +12,7 @@ const TermsOfService = () => {
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
-                <Cherry className="w-5 h-5 text-white" />
+                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-5 h-5" />
               </div>
               <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
             </Link>
@@ -98,7 +98,7 @@ const TermsOfService = () => {
               <p className="text-gray-600">
                 For questions about these Terms of Service, contact us at:
                 <br />
-                <strong>Email:</strong> legal@scanberry.app
+                <strong>Email:</strong> app.scanberry@gmail.com
               </p>
             </section>
           </div>

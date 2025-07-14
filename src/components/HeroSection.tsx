@@ -12,7 +12,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left">
             <div className="flex items-center justify-center lg:justify-start mb-6">
               <div className="w-12 h-12 bg-strawberry rounded-full flex items-center justify-center mr-3 animate-pulse-soft">
-                <Cherry className="w-7 h-7 text-white" />
+                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-7 h-7" />
               </div>
               <span className="text-4xl lg:text-5xl font-bold text-strawberry">ScanBerry</span>
             </div>
@@ -81,7 +81,7 @@ const HeroSection = () => {
               
               {/* Floating Elements */}
               <div className="absolute -top-6 -right-4 w-12 h-12 bg-warm-yellow rounded-full flex items-center justify-center animate-float shadow-lg">
-                <Cherry className="w-6 h-6 text-white" />
+                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-6 h-6" />
               </div>
               <div className="absolute -bottom-4 -left-6 w-8 h-8 bg-fresh-green rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }}></div>
             </div>

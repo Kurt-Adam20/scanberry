@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-strawberry rounded-full flex items-center justify-center">
-                <Cherry className="w-6 h-6 text-white" />
+                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-6 h-6" />
               </div>
               <span className="text-3xl font-bold text-strawberry">ScanBerry</span>
             </div>
@@ -47,6 +47,11 @@ const Footer = () => {
               <li>
                 <a href="#" className="text-gray-300 hover:text-strawberry transition-colors">
                   Support
+                </a>
+              </li>
+              <li>
+                <a href="/contact" className="text-gray-300 hover:text-strawberry transition-colors">
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -96,7 +101,7 @@ const Footer = () => {
                 </div>
                 <div className="text-left">
                   <div className="text-xs text-gray-300">Available on</div>
-                  <div className="text-lg font-bold text-white">iOS & Android</div>
+                  <div className="text-lg font-bold text-white">iOS only</div>
                 </div>
               </div>
             </div>
@@ -112,7 +117,7 @@ const Footer = () => {
               <span>for conscious consumers worldwide.</span>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="mailto:hello@scanberry.app" className="text-gray-400 hover:text-strawberry transition-colors">
+              <a href="mailto:app.scanberry@gmail.com?subject=Contact%20via%20ScanBerry%20Website&body=Please%20describe%20your%20question%20or%20feedback%20here." className="text-gray-400 hover:text-strawberry transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
               <span className="text-gray-400">|</span>

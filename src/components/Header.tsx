@@ -14,7 +14,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
-              <Cherry className="w-5 h-5 text-white" />
+              <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-5 h-5" />
             </div>
             <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
           </div>
@@ -29,6 +29,9 @@ const Header = () => {
             </a>
             <a href="#privacy" className="text-gray-700 hover:text-strawberry transition-colors">
               Privacy
+            </a>
+            <a href="/contact" className="text-gray-700 hover:text-strawberry transition-colors">
+              Contact Us
             </a>
             <Button className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full px-6">
               Download Now
@@ -72,6 +75,13 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Privacy
+              </a>
+              <a
+                href="/contact"
+                className="text-gray-700 hover:text-strawberry transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
               </a>
               <Button className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full w-full mt-4">
                 Download Now
