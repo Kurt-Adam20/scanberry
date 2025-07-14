@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -13,10 +14,29 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-cream flex items-center justify-center px-4 py-12">
-      <div className="bg-white rounded-2xl shadow-lg p-8 max-w-lg w-full">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Contact Us</h1>
-        <form onSubmit={handleSubmit} className="space-y-5">
+    <div className="min-h-screen bg-cream">
+      {/* Header */}
+      <header className="bg-white/95 backdrop-blur-sm border-b border-strawberry/10">
+        <nav className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
+                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-5 h-5" />
+              </div>
+              <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
+            </Link>
+            <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-strawberry transition-colors">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
+              <span>Back to Home</span>
+            </Link>
+          </div>
+        </nav>
+      </header>
+
+      {/* Content */}
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h1 className="text-4xl font-bold text-gray-800 mb-8">Contact Us</h1>
+        <form onSubmit={handleSubmit} className="space-y-5 max-w-xl mx-auto">
           <div>
             <label className="block text-gray-700 font-semibold mb-2">Name</label>
             <input
@@ -54,6 +74,9 @@ const Contact = () => {
             Send Email
           </button>
         </form>
+        <div className="mt-10 text-center">
+          <span className="text-gray-400 text-sm">Or email us directly: <a href="mailto:app.scanberry@gmail.com" className="underline hover:text-strawberry">app.scanberry@gmail.com</a></span>
+        </div>
       </div>
     </div>
   );
