@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Scan, Shield, AlertTriangle, Bell, Crown, Smartphone } from 'lucide-react';
+import { Scan, Shield, AlertTriangle, Bell, Crown, Smartphone, Heart, TrendingUp, BarChart3 } from 'lucide-react';
 
 const FeaturesSection = () => {
   const features = [
@@ -20,11 +20,32 @@ const FeaturesSection = () => {
       bgColor: 'bg-fresh-green/10'
     },
     {
+      icon: Heart,
+      title: 'Health Score',
+      description: 'Get personalized health scores for each product based on nutritional value, additives, and ingredients.',
+      color: 'text-red-500',
+      bgColor: 'bg-red-100'
+    },
+    {
       icon: AlertTriangle,
       title: 'Boycott Brand Alerts',
       description: 'Stay informed about boycott brands and make conscious purchasing decisions.',
       color: 'text-warm-yellow',
       bgColor: 'bg-warm-yellow/10'
+    },
+    {
+      icon: TrendingUp,
+      title: 'Health Analytics',
+      description: 'Track your health progress with detailed analytics and insights about your food choices over time.',
+      color: 'text-blue-600',
+      bgColor: 'bg-blue-100'
+    },
+    {
+      icon: BarChart3,
+      title: 'Nutrition Insights',
+      description: 'Analyze nutritional patterns, ingredient trends, and get recommendations for healthier alternatives.',
+      color: 'text-green-600',
+      bgColor: 'bg-green-100'
     },
     {
       icon: Bell,
@@ -36,7 +57,7 @@ const FeaturesSection = () => {
     {
       icon: Crown,
       title: 'Premium Features',
-      description: 'Unlock higher scan limits, ad-free experience, and exclusive content with premium membership.',
+      description: 'Unlock higher scan limits, ad-free experience, advanced health analytics, and exclusive content.',
       color: 'text-amber-600',
       bgColor: 'bg-amber-100'
     },
@@ -54,10 +75,10 @@ const FeaturesSection = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Powerful Features for <span className="text-strawberry">Conscious Shopping</span>
+            Powerful Features for <span className="text-strawberry">Conscious & Healthy Living</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            ScanBerry combines cutting-edge technology with comprehensive databases to help you make informed choices about the products you buy.
+            ScanBerry combines cutting-edge technology with comprehensive databases to help you make informed choices about the products you buy, while tracking your health journey.
           </p>
         </div>
 
@@ -86,10 +107,10 @@ const FeaturesSection = () => {
         <div className="text-center mt-16">
           <div className="gradient-berry rounded-3xl p-8 max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Ready to Start Scanning?
+              Ready to Start Your Health Journey?
             </h3>
             <p className="text-xl text-white/90 mb-6">
-              Join thousands of users making conscious choices every day
+              Join thousands of users making conscious choices and improving their health every day
             </p>
             <button className="bg-white text-strawberry hover:bg-gray-100 font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
               Download ScanBerry Now
