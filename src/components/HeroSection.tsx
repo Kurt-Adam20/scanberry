@@ -64,46 +64,18 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Column - App Mockup */}
+          {/* Right Column - App Screenshot */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Phone Frame */}
               <div className="w-72 h-[600px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] p-3 shadow-2xl animate-float">
-                <div className="w-full h-full bg-soft-cream rounded-[2.5rem] overflow-hidden relative">
-                  {/* Status Bar */}
-                  <div className="h-8 bg-strawberry flex items-center justify-center">
-                    <div className="w-4 h-4 bg-white rounded-full"></div>
-                  </div>
-                  
-                  {/* App Content */}
-                  <div className="p-6 text-center">
-                    <div className="w-16 h-16 bg-strawberry rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <Cherry className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="text-xl font-bold text-strawberry mb-2">ScanBerry</h3>
-                    <p className="text-sm text-gray-600 mb-6">Ready to scan!</p>
-                    
-                    {/* Scan Button */}
-                    <div className="w-32 h-32 bg-gradient-berry rounded-full mx-auto mb-6 flex items-center justify-center animate-pulse-soft">
-                      <Scan className="w-12 h-12 text-white" />
-                    </div>
-                    
-                    {/* Status Cards */}
-                    <div className="space-y-3">
-                      <div className="bg-fresh-green/20 border border-fresh-green/30 rounded-xl p-3">
-                        <div className="flex items-center justify-center space-x-2">
-                          <Shield className="w-4 h-4 text-fresh-green" />
-                          <span className="text-sm font-semibold text-fresh-green">Halal ✓</span>
-                        </div>
-                      </div>
-                      <div className="bg-warm-yellow/20 border border-warm-yellow/30 rounded-xl p-3">
-                        <div className="flex items-center justify-center space-x-2">
-                          <AlertTriangle className="w-4 h-4 text-warm-yellow" />
-                          <span className="text-sm font-semibold text-warm-yellow">Check Boycott</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div className="w-full h-full bg-black rounded-[2.5rem] overflow-hidden relative">
+                  {/* App Screenshot */}
+                  <img 
+                    src="/lovable-uploads/8e8f0054-a438-4453-b660-205a127f4657.png" 
+                    alt="ScanBerry App - Ice Cream Products with Halal Status"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               
