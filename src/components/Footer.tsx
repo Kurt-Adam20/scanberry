@@ -30,19 +30,19 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+                <Link to="/#features" className="text-gray-300 hover:text-strawberry transition-colors">
                   Features
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+                <Link to="/#about" className="text-gray-300 hover:text-strawberry transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#privacy" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+                <Link to="/#privacy" className="text-gray-300 hover:text-strawberry transition-colors">
                   Privacy
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
@@ -50,9 +50,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+                <Link to="/contact" className="text-gray-300 hover:text-strawberry transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -97,7 +97,9 @@ const Footer = () => {
             <div className="bg-black rounded-xl p-4 hover:bg-gray-800 transition-colors cursor-pointer">
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-                  <span className="text-black font-bold text-sm">📱</span>
+                  <span className="text-black font-bold text-sm">
+d
+dcf1</span>
                 </div>
                 <div className="text-left">
                   <div className="text-xs text-gray-300">Available on</div>
@@ -112,7 +114,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
-              <span>© 2024 ScanBerry. Made with</span>
+              <span> 2024 ScanBerry. Made with</span>
               <Heart className="w-4 h-4 text-strawberry fill-current" />
               <span>for conscious consumers worldwide.</span>
             </div>

@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Cherry, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,18 +22,18 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+            <Link to="/#features" className="text-gray-700 hover:text-strawberry transition-colors">
               Features
-            </a>
-            <a href="#about" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="/#about" className="text-gray-700 hover:text-strawberry transition-colors">
               About
-            </a>
-            <a href="#privacy" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="/#privacy" className="text-gray-700 hover:text-strawberry transition-colors">
               Privacy
-            </a>
-            <a href="/contact" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to="/contact" className="text-gray-700 hover:text-strawberry transition-colors">
               Contact Us
-            </a>
+            </Link>
             <Button className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full px-6">
               Download Now
             </Button>
@@ -55,38 +56,34 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-strawberry/10">
             <div className="flex flex-col space-y-4 pt-4">
-              <a
-                href="#features"
+              <Link
+                to="/#features"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
-                target="_blank" rel="noopener noreferrer"
               >
                 Features
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                to="/#about"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
-                target="_blank" rel="noopener noreferrer"
               >
                 About
-              </a>
-              <a
-                href="#privacy"
+              </Link>
+              <Link
+                to="/#privacy"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
-                target="_blank" rel="noopener noreferrer"
               >
                 Privacy
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
-                target="_blank" rel="noopener noreferrer"
               >
                 Contact Us
-              </a>
+              </Link>
               <Button className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full w-full mt-4">
                 Download Now
               </Button>
