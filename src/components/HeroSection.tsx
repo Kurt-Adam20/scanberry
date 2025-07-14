@@ -1,0 +1,123 @@
+
+import React from 'react';
+import { Button } from '@/components/ui/button';
+import { Smartphone, Cherry, Scan, Shield, AlertTriangle } from 'lucide-react';
+
+const HeroSection = () => {
+  return (
+    <section className="pt-24 pb-16 px-4 gradient-soft min-h-screen flex items-center">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column - Content */}
+          <div className="text-center lg:text-left">
+            <div className="flex items-center justify-center lg:justify-start mb-6">
+              <div className="w-12 h-12 bg-strawberry rounded-full flex items-center justify-center mr-3 animate-pulse-soft">
+                <Cherry className="w-7 h-7 text-white" />
+              </div>
+              <span className="text-4xl lg:text-5xl font-bold text-strawberry">ScanBerry</span>
+            </div>
+            
+            <h1 className="text-3xl lg:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+              Scan. Check. <span className="text-strawberry">Eat with confidence!</span>
+            </h1>
+            
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              ScanBerry helps you make conscious choices at the supermarket. Scan products and instantly discover if they are halal, contain haram ingredients, or are part of a boycott brand.
+            </p>
+            
+            <p className="text-lg text-strawberry font-semibold mb-8">
+              Eat with peace of mind, every day! 🍓
+            </p>
+
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
+              <Button 
+                size="lg" 
+                className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+              >
+                <Smartphone className="w-5 h-5 mr-2" />
+                Download ScanBerry
+              </Button>
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-2 border-strawberry text-strawberry hover:bg-strawberry hover:text-white rounded-full px-8 py-4 text-lg font-semibold transition-all duration-300"
+              >
+                Learn More
+              </Button>
+            </div>
+
+            {/* Quick Features */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
+                <Scan className="w-5 h-5 text-fresh-green" />
+                <span className="text-sm text-gray-600">Quick Scan</span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
+                <Shield className="w-5 h-5 text-fresh-green" />
+                <span className="text-sm text-gray-600">Halal Check</span>
+              </div>
+              <div className="flex items-center justify-center lg:justify-start space-x-2">
+                <AlertTriangle className="w-5 h-5 text-warm-yellow" />
+                <span className="text-sm text-gray-600">Boycott Alert</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - App Mockup */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              {/* Phone Frame */}
+              <div className="w-72 h-[600px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] p-3 shadow-2xl animate-float">
+                <div className="w-full h-full bg-soft-cream rounded-[2.5rem] overflow-hidden relative">
+                  {/* Status Bar */}
+                  <div className="h-8 bg-strawberry flex items-center justify-center">
+                    <div className="w-4 h-4 bg-white rounded-full"></div>
+                  </div>
+                  
+                  {/* App Content */}
+                  <div className="p-6 text-center">
+                    <div className="w-16 h-16 bg-strawberry rounded-full mx-auto mb-4 flex items-center justify-center">
+                      <Cherry className="w-8 h-8 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-strawberry mb-2">ScanBerry</h3>
+                    <p className="text-sm text-gray-600 mb-6">Ready to scan!</p>
+                    
+                    {/* Scan Button */}
+                    <div className="w-32 h-32 bg-gradient-berry rounded-full mx-auto mb-6 flex items-center justify-center animate-pulse-soft">
+                      <Scan className="w-12 h-12 text-white" />
+                    </div>
+                    
+                    {/* Status Cards */}
+                    <div className="space-y-3">
+                      <div className="bg-fresh-green/20 border border-fresh-green/30 rounded-xl p-3">
+                        <div className="flex items-center justify-center space-x-2">
+                          <Shield className="w-4 h-4 text-fresh-green" />
+                          <span className="text-sm font-semibold text-fresh-green">Halal ✓</span>
+                        </div>
+                      </div>
+                      <div className="bg-warm-yellow/20 border border-warm-yellow/30 rounded-xl p-3">
+                        <div className="flex items-center justify-center space-x-2">
+                          <AlertTriangle className="w-4 h-4 text-warm-yellow" />
+                          <span className="text-sm font-semibold text-warm-yellow">Check Boycott</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating Elements */}
+              <div className="absolute -top-6 -right-4 w-12 h-12 bg-warm-yellow rounded-full flex items-center justify-center animate-float shadow-lg">
+                <Cherry className="w-6 h-6 text-white" />
+              </div>
+              <div className="absolute -bottom-4 -left-6 w-8 h-8 bg-fresh-green rounded-full animate-float shadow-lg" style={{ animationDelay: '1s' }}></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
