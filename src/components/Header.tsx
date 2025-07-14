@@ -22,15 +22,15 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/#features" className="text-gray-700 hover:text-strawberry transition-colors">
+            <a href="#features" className="text-gray-700 hover:text-strawberry transition-colors">
               Features
-            </Link>
-            <Link to="/#about" className="text-gray-700 hover:text-strawberry transition-colors">
+            </a>
+            <a href="#about" className="text-gray-700 hover:text-strawberry transition-colors">
               About
-            </Link>
-            <Link to="/#privacy" className="text-gray-700 hover:text-strawberry transition-colors">
+            </a>
+            <a href="#privacy" className="text-gray-700 hover:text-strawberry transition-colors">
               Privacy
-            </Link>
+            </a>
             <Link to="/contact" className="text-gray-700 hover:text-strawberry transition-colors">
               Contact Us
             </Link>
@@ -56,27 +56,27 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-strawberry/10">
             <div className="flex flex-col space-y-4 pt-4">
-              <Link
-                to="/#features"
+              <a
+                href="#features"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Features
-              </Link>
-              <Link
-                to="/#about"
+              </a>
+              <a
+                href="#about"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
-              </Link>
-              <Link
-                to="/#privacy"
+              </a>
+              <a
+                href="#privacy"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Privacy
-              </Link>
+              </a>
               <Link
                 to="/contact"
                 className="text-gray-700 hover:text-strawberry transition-colors"

@@ -30,19 +30,19 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/#features" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#features" className="text-gray-300 hover:text-strawberry transition-colors">
                   Features
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#about" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#about" className="text-gray-300 hover:text-strawberry transition-colors">
                   About Us
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/#privacy" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#privacy" className="text-gray-300 hover:text-strawberry transition-colors">
                   Privacy
-                </Link>
+                </a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
@@ -98,8 +98,8 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
                   <span className="text-black font-bold text-sm">
-d
-dcf1</span>
+📱
+</span>
                 </div>
                 <div className="text-left">
                   <div className="text-xs text-gray-300">Available on</div>
@@ -114,7 +114,7 @@ dcf1</span>
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center space-x-2 text-gray-400 mb-4 md:mb-0">
-              <span> 2024 ScanBerry. Made with</span>
+              <span>© 2024 ScanBerry. Made with</span>
               <Heart className="w-4 h-4 text-strawberry fill-current" />
               <span>for conscious consumers worldwide.</span>
             </div>
