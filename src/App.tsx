@@ -19,7 +19,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/scanberry/">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />

@@ -76,12 +76,14 @@ const PrivacySection = () => {
               <Link 
                 to="/privacy" 
                 className="inline-flex items-center justify-center px-6 py-3 bg-strawberry text-white rounded-full font-semibold hover:bg-strawberry/90 transition-colors duration-300"
+                target="_blank" rel="noopener noreferrer"
               >
                 Privacy Policy
               </Link>
               <Link 
                 to="/terms" 
                 className="inline-flex items-center justify-center px-6 py-3 border-2 border-strawberry text-strawberry rounded-full font-semibold hover:bg-strawberry hover:text-white transition-colors duration-300"
+                target="_blank" rel="noopener noreferrer"
               >
                 Terms of Service
               </Link>

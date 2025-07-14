@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Cherry, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 const PrivacyPolicy = () => {
   return (
@@ -25,81 +25,91 @@ const PrivacyPolicy = () => {
       </header>
 
       {/* Content */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-8">Privacy Policy</h1>
-          
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 mb-6">
-              <strong>Last updated:</strong> December 2024
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h1 className="text-4xl font-bold text-gray-800 mb-8">Privacy Policy</h1>
+        <div className="prose prose-lg max-w-none">
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Information We Collect</h2>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">a. Personal Information</h3>
+            <p className="text-gray-600 mb-4">We do not require you to provide personal information such as your name, email address, or contact details to use the App. However, if you contact us (e.g., via email), we may collect the personal information you provide.</p>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">b. Non-Personal Information</h3>
+            <p className="text-gray-600 mb-4">We may automatically collect non-personal data, such as:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Device type, model, and operating system</li>
+              <li>Usage statistics (e.g., time spent on the App)</li>
+              <li>App performance data, including crash reports and errors</li>
+            </ul>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">c. Cookies and Tracking Technologies</h3>
+            <p className="text-gray-600 mb-4">The App does not currently use cookies or similar tracking technologies. However, third-party services integrated into the App (if any) may collect such data according to their own privacy policies.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">2. How We Use Your Information</h2>
+            <p className="text-gray-600 mb-4">We use the information we collect for purposes such as:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Ensuring the App functions properly</li>
+              <li>Improving the App’s design, features, and performance</li>
+              <li>Responding to your inquiries or feedback</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">3. Sharing Your Information</h2>
+            <p className="text-gray-600 mb-4">We do not sell, trade, or rent your personal information. We may share non-personal information with third parties, such as analytics providers, to improve the App.</p>
+            <h3 className="text-xl font-semibold text-gray-800 mb-2">Third-Party Services</h3>
+            <p className="text-gray-600 mb-4">The App may use third-party tools or services for analytics or performance monitoring. These third parties may collect information as governed by their own privacy policies. If you would like to know which third-party services are used, please contact us.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Data Security</h2>
+            <p className="text-gray-600 mb-4">We implement reasonable technical and organizational measures to protect your information. However, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">5. Data Retention</h2>
+            <p className="text-gray-600 mb-4">We retain non-personal data for as long as necessary to fulfill the purposes outlined in this Privacy Policy. Any personal information collected (e.g., through user inquiries) is retained only as long as needed to provide support or comply with legal obligations.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">6. International Users</h2>
+            <p className="text-gray-600 mb-4">If you access the App outside Belgium, your information may be transferred to and processed in Belgium, where privacy laws may differ from those in your country.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">7. Legal Basis for Processing (for EEA Users)</h2>
+            <p className="text-gray-600 mb-4">If you are in the European Economic Area (EEA), we process your data based on the following legal bases:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Consent: When you agree to provide information (e.g., by contacting us)</li>
+              <li>Legitimate Interests: To ensure the functionality and improvement of the App</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">8. Your Rights (for EEA and UK Users)</h2>
+            <p className="text-gray-600 mb-4">You have the right to:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Access the personal data we hold about you</li>
+              <li>Request correction of inaccurate data</li>
+              <li>Request deletion of your data (“right to be forgotten”)</li>
+              <li>Object to or restrict the processing of your data</li>
+              <li>Request data portability (to receive your data in a commonly used format)</li>
+              <li>Withdraw your consent at any time (where processing is based on consent)</li>
+              <li>Lodge a complaint with your local data protection authority</li>
+            </ul>
+            <p className="text-gray-600 mb-4">To exercise any of these rights, please contact us at <a href="mailto:app.scanberry@gmail.com" className="underline hover:text-strawberry">app.scanberry@gmail.com</a>.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">9. Changes to This Privacy Policy</h2>
+            <p className="text-gray-600 mb-4">We may update this Privacy Policy from time to time. Any changes will be posted within the App, and the “Effective Date” will be updated. Continued use of the App after such changes indicates your acceptance of the updated policy.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">10. Contact Information</h2>
+            <p className="text-gray-600">If you have questions or concerns about this Privacy Policy or how your information is handled, please contact us at:<br />
+              <strong>Email:</strong> app.scanberry@gmail.com
             </p>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Introduction</h2>
-              <p className="text-gray-600 mb-4">
-                Welcome to ScanBerry. We respect your privacy and are committed to protecting your personal data. 
-                This privacy policy explains how we collect, use, and protect your information when you use our mobile application.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">2. Information We Collect</h2>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>Product scan data and search history</li>
-                <li>Health preferences and dietary restrictions</li>
-                <li>Usage analytics and app performance data</li>
-                <li>Device information and operating system details</li>
-                <li>Account information (if you create an account)</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">3. How We Use Your Information</h2>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>Provide personalized health scores and recommendations</li>
-                <li>Improve our product database and scanning accuracy</li>
-                <li>Send you relevant notifications and updates</li>
-                <li>Analyze usage patterns to enhance app functionality</li>
-                <li>Ensure app security and prevent fraud</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Data Sharing</h2>
-              <p className="text-gray-600 mb-4">
-                We do not sell, trade, or share your personal information with third parties for marketing purposes. 
-                We may share anonymized, aggregated data for research and improvement purposes.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">5. Data Security</h2>
-              <p className="text-gray-600 mb-4">
-                We implement industry-standard security measures to protect your data, including encryption, 
-                secure servers, and regular security audits.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">6. Your Rights</h2>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>Access your personal data</li>
-                <li>Correct inaccurate information</li>
-                <li>Delete your account and data</li>
-                <li>Export your data</li>
-                <li>Opt-out of marketing communications</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">7. Contact Us</h2>
-              <p className="text-gray-600">
-                If you have any questions about this Privacy Policy, please contact us at:
-                <br />
-                <strong>Email:</strong> app.scanberry@gmail.com
-              </p>
-            </section>
-          </div>
+          </section>
         </div>
       </div>
     </div>

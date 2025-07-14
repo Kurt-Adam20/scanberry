@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
               <div className="w-10 h-10 bg-strawberry rounded-full flex items-center justify-center">
-                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-6 h-6" />
+                <img src={`${import.meta.env.BASE_URL}scanberry-logo.png`} alt="ScanBerry Icon" className="w-6 h-6" />
               </div>
               <span className="text-3xl font-bold text-strawberry">ScanBerry</span>
             </div>
@@ -30,27 +30,27 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#features" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#features" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#about" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#privacy" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#privacy" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
                   Privacy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="#" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
                   Support
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-strawberry transition-colors">
+                <a href="/contact" className="text-gray-300 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
                   Contact Us
                 </a>
               </li>
@@ -117,7 +117,7 @@ const Footer = () => {
               <span>for conscious consumers worldwide.</span>
             </div>
             <div className="flex items-center space-x-4">
-              <a href="mailto:app.scanberry@gmail.com?subject=Contact%20via%20ScanBerry%20Website&body=Please%20describe%20your%20question%20or%20feedback%20here." className="text-gray-400 hover:text-strawberry transition-colors">
+              <a href="mailto:app.scanberry@gmail.com?subject=Contact%20via%20ScanBerry%20Website&body=Please%20describe%20your%20question%20or%20feedback%20here." className="text-gray-400 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
                 <Mail className="w-5 h-5" />
               </a>
               <span className="text-gray-400">|</span>

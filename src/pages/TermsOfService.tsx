@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Cherry, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 
 const TermsOfService = () => {
   return (
@@ -25,83 +25,67 @@ const TermsOfService = () => {
       </header>
 
       {/* Content */}
-      <div className="container mx-auto px-4 py-12">
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-          <h1 className="text-4xl font-bold text-gray-800 mb-8">Terms of Service</h1>
-          
-          <div className="prose prose-lg max-w-none">
-            <p className="text-gray-600 mb-6">
-              <strong>Last updated:</strong> December 2024
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg p-8">
+        <h1 className="text-4xl font-bold text-gray-800 mb-8">Terms and Conditions</h1>
+        <div className="prose prose-lg max-w-none">
+          <p className="text-gray-600 mb-6">These Terms and Conditions (“Terms”) govern your use of ScanBerry (“App”), developed by ScanBerry (“Developer”). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, do not use the App.</p>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">📚 Definitions</h2>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li><strong>User</strong> refers to any person who downloads, installs, or uses the App.</li>
+              <li><strong>Content</strong> refers to any text, images, audio, or other media available through the App.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">🎁 License</h2>
+            <p className="text-gray-600 mb-4">Subject to your compliance with these Terms, the Developer grants you a limited, non-exclusive, non-transferable, revocable license to download, install, and use the App for your personal, non-commercial purposes.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">🔐 User Conduct</h2>
+            <p className="text-gray-600 mb-4">You agree not to:</p>
+            <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <li>Use the App for any unlawful or fraudulent purposes.</li>
+              <li>Copy, modify, adapt, or create derivative works of the App or its Content.</li>
+              <li>Interfere with, disrupt, or overload the App or its underlying infrastructure.</li>
+              <li>Attempt to gain unauthorized access to the App or any associated systems or networks.</li>
+            </ul>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">💾 Intellectual Property Rights</h2>
+            <p className="text-gray-600 mb-4">All rights, title, and interest in and to the App, including its Content and any associated intellectual property rights, are the exclusive property of the Developer and its licensors. You may not reproduce, distribute, or create derivative works of the App or its Content without the express written permission of the Developer.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">🛡️ Disclaimer</h2>
+            <p className="text-gray-600 mb-4">THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE,” WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE DEVELOPER DOES NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED, ERROR-FREE, OR COMPLETELY SECURE.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">⚖️ Limitation of Liability</h2>
+            <p className="text-gray-600 mb-4">TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE DEVELOPER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OF THE APP, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">🌐 Governing Law</h2>
+            <p className="text-gray-600 mb-4">These Terms shall be governed by and construed in accordance with the laws of Belgium, without regard to its conflict of laws principles.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">🔄 Modifications</h2>
+            <p className="text-gray-600 mb-4">The Developer reserves the right to modify these Terms at any time, in its sole discretion. Your continued use of the App following any modification constitutes your acceptance of the modified Terms.</p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">📩 Contact Information</h2>
+            <p className="text-gray-600">If you have any questions or concerns about these Terms or the App, please contact the Developer at:<br />
+              <strong>Email:</strong> app.scanberry@gmail.com
             </p>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">1. Acceptance of Terms</h2>
-              <p className="text-gray-600 mb-4">
-                By downloading, installing, or using the ScanBerry mobile application, you agree to be bound by these Terms of Service. 
-                If you do not agree to these terms, please do not use our app.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">2. Description of Service</h2>
-              <p className="text-gray-600 mb-4">
-                ScanBerry is a mobile application that helps users scan products to check for halal/haram status, 
-                boycott information, health scores, and nutritional insights. We provide this service for informational purposes only.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">3. User Responsibilities</h2>
-              <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                <li>Use the app only for lawful purposes</li>
-                <li>Provide accurate information when creating an account</li>
-                <li>Keep your account credentials secure</li>
-                <li>Respect intellectual property rights</li>
-                <li>Not attempt to reverse engineer or hack the app</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">4. Disclaimer</h2>
-              <p className="text-gray-600 mb-4">
-                While we strive for accuracy, ScanBerry's information is provided "as is" without warranties. 
-                Users should verify critical information independently. We are not responsible for decisions made based on our app's data.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">5. Premium Subscription</h2>
-              <p className="text-gray-600 mb-4">
-                Premium features require a paid subscription. Subscriptions auto-renew unless cancelled. 
-                Refunds are handled according to app store policies.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">6. Limitation of Liability</h2>
-              <p className="text-gray-600 mb-4">
-                ScanBerry and its creators shall not be liable for any indirect, incidental, special, 
-                or consequential damages arising from the use of our application.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">7. Termination</h2>
-              <p className="text-gray-600 mb-4">
-                We reserve the right to terminate or suspend accounts that violate these terms. 
-                Users may delete their accounts at any time through the app settings.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">8. Contact Information</h2>
-              <p className="text-gray-600">
-                For questions about these Terms of Service, contact us at:
-                <br />
-                <strong>Email:</strong> app.scanberry@gmail.com
-              </p>
-            </section>
-          </div>
+            <p className="text-gray-400 text-xs mt-4">This Mobile App Terms and Conditions template has been customized for ScanBerry. For legal certainty, consider consulting with legal counsel if necessary.</p>
+          </section>
         </div>
       </div>
     </div>

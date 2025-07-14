@@ -14,23 +14,23 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
-              <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-5 h-5" />
+              <img src={`${import.meta.env.BASE_URL}scanberry-logo.png`} alt="ScanBerry Icon" className="w-5 h-5" />
             </div>
             <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-700 hover:text-strawberry transition-colors">
+            <a href="#features" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
               Features
             </a>
-            <a href="#about" className="text-gray-700 hover:text-strawberry transition-colors">
+            <a href="#about" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
               About
             </a>
-            <a href="#privacy" className="text-gray-700 hover:text-strawberry transition-colors">
+            <a href="#privacy" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
               Privacy
             </a>
-            <a href="/contact" className="text-gray-700 hover:text-strawberry transition-colors">
+            <a href="/contact" className="text-gray-700 hover:text-strawberry transition-colors" target="_blank" rel="noopener noreferrer">
               Contact Us
             </a>
             <Button className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full px-6">
@@ -59,6 +59,7 @@ const Header = () => {
                 href="#features"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                target="_blank" rel="noopener noreferrer"
               >
                 Features
               </a>
@@ -66,6 +67,7 @@ const Header = () => {
                 href="#about"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                target="_blank" rel="noopener noreferrer"
               >
                 About
               </a>
@@ -73,6 +75,7 @@ const Header = () => {
                 href="#privacy"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                target="_blank" rel="noopener noreferrer"
               >
                 Privacy
               </a>
@@ -80,6 +83,7 @@ const Header = () => {
                 href="/contact"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
+                target="_blank" rel="noopener noreferrer"
               >
                 Contact Us
               </a>
