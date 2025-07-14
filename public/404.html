@@ -27,5 +27,15 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect
+      (function() {
+        var l = window.location;
+        var pathname = l.pathname.replace(/^\/scanberry/, '');
+        if (!l.hash && pathname && pathname !== '/') {
+          window.location.replace('/scanberry/?redirect=' + encodeURIComponent(pathname + l.search + l.hash));
+        }
+      })();
+    </script>
   </body>
 </html> 
