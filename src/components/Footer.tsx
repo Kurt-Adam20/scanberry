@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Cherry, Heart, Mail, Globe } from 'lucide-react';
 
 const Footer = () => {
@@ -56,24 +57,24 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-6">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="/terms" className="text-gray-300 hover:text-strawberry transition-colors">
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="/privacy" className="text-gray-300 hover:text-strawberry transition-colors">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="/cookies" className="text-gray-300 hover:text-strawberry transition-colors">
                   Cookie Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="/gdpr" className="text-gray-300 hover:text-strawberry transition-colors">
                   GDPR
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

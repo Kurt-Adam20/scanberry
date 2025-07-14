@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Lock, Eye, Database } from 'lucide-react';
 
@@ -72,18 +73,18 @@ const PrivacySection = () => {
               Read our detailed privacy policy and terms of service to understand exactly how we handle your data.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="#" 
+              <Link 
+                to="/privacy" 
                 className="inline-flex items-center justify-center px-6 py-3 bg-strawberry text-white rounded-full font-semibold hover:bg-strawberry/90 transition-colors duration-300"
               >
                 Privacy Policy
-              </a>
-              <a 
-                href="#" 
+              </Link>
+              <Link 
+                to="/terms" 
                 className="inline-flex items-center justify-center px-6 py-3 border-2 border-strawberry text-strawberry rounded-full font-semibold hover:bg-strawberry hover:text-white transition-colors duration-300"
               >
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>
