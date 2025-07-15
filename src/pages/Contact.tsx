@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '@/components/Footer';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -14,7 +15,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-soft-cream">
+    <div className="min-h-screen flex flex-col bg-soft-cream">
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-sm border-b border-strawberry/10">
         <nav className="container mx-auto px-4 py-4">
@@ -34,7 +35,7 @@ const Contact = () => {
       </header>
 
       {/* Content */}
-      <div className="max-w-6xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="max-w-6xl mx-auto py-12 px-4 grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
         {/* Form Section */}
         <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col justify-center">
           <div className="flex items-center mb-6">
@@ -116,6 +117,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

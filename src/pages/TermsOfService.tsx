@@ -2,17 +2,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
+import Footer from '@/components/Footer';
+import { useEffect } from 'react';
 
 const TermsOfService = () => {
+  useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
-    <div className="min-h-screen bg-cream">
+    <div className="min-h-screen flex flex-col bg-cream">
       {/* Header */}
       <header className="bg-white/95 backdrop-blur-sm border-b border-strawberry/10">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
-                <img src="/ChatGPT Image 8 jul 2025, 22_21_54.png" alt="ScanBerry Icon" className="w-5 h-5" />
+                <img src={`${import.meta.env.BASE_URL}scanberry-logo.png`} alt="ScanBerry Icon" className="w-5 h-5" />
               </div>
               <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
             </Link>
@@ -88,6 +91,7 @@ const TermsOfService = () => {
           </section>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
