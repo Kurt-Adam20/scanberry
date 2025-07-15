@@ -20,13 +20,13 @@ const Contact = () => {
       <header className="bg-white/95 backdrop-blur-sm border-b border-strawberry/10">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="flex items-center space-x-2">
+            <Link to=".." className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-strawberry rounded-full flex items-center justify-center">
                 <img src={`${import.meta.env.BASE_URL}scanberry-logo.png`} alt="ScanBerry Icon" className="w-5 h-5" />
               </div>
               <span className="text-2xl font-bold text-strawberry">ScanBerry</span>
             </Link>
-            <Link to="/" className="flex items-center space-x-2 text-gray-600 hover:text-strawberry transition-colors">
+            <Link to=".." className="flex items-center space-x-2 text-gray-600 hover:text-strawberry transition-colors">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
               <span>Back to Home</span>
             </Link>
