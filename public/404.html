@@ -28,12 +28,15 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
     <script type="text/javascript">
-      // GitHub Pages SPA redirect
+      // GitHub Pages SPA redirect (fix dubbele slash)
       (function() {
         var l = window.location;
-        var pathname = l.pathname.replace(/^\/scanberry/, '');
-        if (!l.hash && pathname && pathname !== '/') {
-          window.location.replace('/scanberry/?redirect=' + encodeURIComponent(pathname + l.search + l.hash));
+        var base = '/scanberry';
+        var path = l.pathname.replace(base, '');
+        if (path.startsWith('/')) path = path.slice(1);
+        if (path && path !== '404.html') {
+          var redirectUrl = base + '/?redirect=' + encodeURIComponent(path + l.search + l.hash);
+          window.location.replace(redirectUrl);
         }
       })();
     </script>
