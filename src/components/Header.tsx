@@ -28,9 +28,9 @@ const Header = () => {
             <a href="#about" className="text-gray-700 hover:text-strawberry transition-colors">
               About
             </a>
-            <a href="#privacy" className="text-gray-700 hover:text-strawberry transition-colors">
+            <Link to="/privacy" className="text-gray-700 hover:text-strawberry transition-colors">
               Privacy
-            </a>
+            </Link>
             <Link to="/contact" className="text-gray-700 hover:text-strawberry transition-colors">
               Contact Us
             </Link>
@@ -70,13 +70,13 @@ const Header = () => {
               >
                 About
               </a>
-              <a
-                href="#privacy"
+              <Link
+                to="/privacy"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Privacy
-              </a>
+              </Link>
               <Link
                 to="/contact"
                 className="text-gray-700 hover:text-strawberry transition-colors"
