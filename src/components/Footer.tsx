@@ -45,12 +45,12 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="contact" className="text-gray-300 hover:text-strawberry transition-colors">
                   Support
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="contact" className="text-gray-300 hover:text-strawberry transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -62,22 +62,22 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-6">Legal</h4>
             <ul className="space-y-3">
               <li>
-                <Link to="/terms" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="terms" className="text-gray-300 hover:text-strawberry transition-colors">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="privacy" className="text-gray-300 hover:text-strawberry transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/cookies" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="cookies" className="text-gray-300 hover:text-strawberry transition-colors">
                   Cookie Policy
                 </Link>
               </li>
               <li>
-                <Link to="/gdpr" className="text-gray-300 hover:text-strawberry transition-colors">
+                <Link to="gdpr" className="text-gray-300 hover:text-strawberry transition-colors">
                   GDPR
                 </Link>
               </li>

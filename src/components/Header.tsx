@@ -28,10 +28,10 @@ const Header = () => {
             <a href="#about" className="text-gray-700 hover:text-strawberry transition-colors">
               About
             </a>
-            <Link to="/privacy" className="text-gray-700 hover:text-strawberry transition-colors">
+            <Link to="privacy" className="text-gray-700 hover:text-strawberry transition-colors">
               Privacy
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-strawberry transition-colors">
+            <Link to="contact" className="text-gray-700 hover:text-strawberry transition-colors">
               Contact Us
             </Link>
             <Button className="bg-strawberry hover:bg-strawberry/90 text-white rounded-full px-6">
@@ -71,14 +71,14 @@ const Header = () => {
                 About
               </a>
               <Link
-                to="/privacy"
+                to="privacy"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Privacy
               </Link>
               <Link
-                to="/contact"
+                to="contact"
                 className="text-gray-700 hover:text-strawberry transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
